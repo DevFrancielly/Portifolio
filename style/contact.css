@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
 :root {
-    --cor-primaria: #1C1C1C;
-    --cor-font: #EDE6DB;
-    --cor-destaque: #d19275;
+    --cor-primaria: #F8F1F6;
+    --cor-font: #000000;
+    --cor-destaque: #b33473;
+    --linear-gradient: linear-gradient(90deg, #983d97, #a33983, #b33473, #e13747, #fc9e4f);
 
     --fonte-primaria: 'Krona One', sans-serif;
     --font-secundaria: 'Montserrat', sans-serif;
@@ -12,27 +13,36 @@
     margin: 0;
     padding: 0;
 }
-body {
+body {  
     box-sizing: border-box;
-    background-color: var(--cor-primaria);
+    background: var(--cor-primaria);
     color: var(--cor-font);
 }
 .header{
-    padding: 4% 0% 0% 15%;
+    display: flex;
+}
+.image_assinatura-logo {
+    width: 9%;
+    display: flex;
+    padding-top: 4%;
+    padding-left: 7%;
 }
 .header-menu {
+    padding-top: 6%;
+    padding-left: 10%;
     display: flex;
-    gap: 80px;
+    gap: 40px;
+    justify-content: start;
 }
 .header-menu-link {
     font-family: var(--font-secundaria);
-    font-size: 24px;
+    font-size: 1.1rem;
     font-weight: 600;
-    color: var(--cor-destaque);
+    color: var(--cor-font);
     text-decoration: none;
 }
 .header-menu-link:hover{
-    color: var( --cor-font);
+    color: var(--cor-font);
 }
 .titulo-destaque {
     color: var(--cor-destaque);
@@ -42,6 +52,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 85px;
 }
 .presentation-content {
     width: 615px;
@@ -50,40 +61,17 @@ body {
     gap: 40px;
 }
 .presentation-content-title {
-    font-size: 36px;
-    font-family: var(--fonte-primaria)
-}
-.presentation-content-text {
-    font-size: 24px;
-    font-family: var(--font-secundaria)
-}
-.presentation-link-title {
+    font-size: 2rem;
     font-family: var(--fonte-primaria);
-    font-weight: 400;
-    font-size: 24px;
+    color: var(--cor-destaque);
 }
-.presentation-link {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    gap: 13px;
+.rodape {
+    position:absolute;
+    top: 732px;
+    width: 100%; 
+
 }
-.presentation-link-config {
-    border: 2px solid var(--cor-destaque);
-    display: flex;
-    justify-content: center;
-    gap: 16px;
-    width: 378px;
-    text-align: center;
-    border-radius: 10px;
-    font-size: 24px;
-    font-weight: 600;
-    padding: 21.5px 0;
-    text-decoration: none;
-    color: var(--cor-font);
-    font-family:  var(--font-secundaria)
-}
-.presentation-link-config:hover {
-    background-color: #1D5C63;
+.rodape-group {
+    background: var(--linear-gradient);
+    height: 0.8em;
 }
