@@ -2,7 +2,7 @@
 :root {
     --cor-primaria: #F8F1F6;
     --cor-font: #000000;
-    --cor-destaque: #e13747;
+    --cor-destaque: #8F0B3C;
     --linear-gradient: linear-gradient(90deg, #983d97, #a33983, #b33473, #e13747, #fc9e4f);
 
     --fonte-primaria: 'Krona One', sans-serif;
@@ -45,16 +45,18 @@ body {
     color: var(--cor-destaque);
 }
 .presentation {
-    padding: 10% 0 0 10%;
+    padding: 10% 10%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 .presentation-content {
-    width: 615px;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+    color: var(--cor-font);
+    font-family: var(--font-primaria);
+    font-size: 1.8rem;
+    text-align: center;
+    width: 75%;
+    line-height: 180%;
 }
 .presentation-content-title {
     font-size: 2.25rem;
